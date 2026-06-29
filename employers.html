@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employers Staffing Solutions | Sample Consultancy</title>
+    <meta name="description" content="Comprehensive staffing solutions to enhance your workforce and achieve your business goals with Sample Consultancy.">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Stripe-Style Animated Mesh Gradient Backdrop -->
+    <div class="stripe-mesh-gradient"></div>
+
+    <!-- 3D Background Grid -->
+    <div class="bg-3d-grid">
+        <div class="bg-3d-element"></div>
+    </div>
+
+    <!-- Header & Navigation (Apple Sub-Navigation Bar Layout) -->
+    <header class="apple-sub-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sample Consultancy</a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="employers.html" class="active">Employers</a></li>
+                <li><a href="jobs.html">Job Seekers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Employers Hero with Background Video -->
+    <section class="jobs-hero">
+        <video class="hero-video-bg" preload="metadata" loop muted playsinline poster="https://img1.wsimg.com/isteam/videos/ubwAw3P1NGSn7Qly4">
+            <source src="https://categories.api.godaddy.com/v4/videos/raw/video/ubwAw3P1NGSn7Qly4" type="video/mp4">
+        </video>
+        <div class="hero-gradient-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="section-subtitle">For Organizations</div>
+            <h1>Comprehensive <span>Staffing Solutions</span></h1>
+            <p style="margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">Connecting employers with skilled professionals across India to enhance your workforce and achieve your business goals.</p>
+        </div>
+    </section>
+
+    <!-- Staffing Information Card -->
+    <section style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="container" style="max-width: 800px;">
+            <div class="glass-card reveal-scale" style="text-align: center;">
+                <div class="section-subtitle">Staffing Operations</div>
+                <h2>Bridging the Gap</h2>
+                <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;">As a premier employment agency, Sample Consultancy acts as a bridge between talented professionals and top companies. We analyze your commercial targets and present shortlists tailored precisely to enhance your workforce capabilities.</p>
+                <p>From core technical staff to office administrators, we deliver high-integrity personnel aligned to support corporate development plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Request Form Section -->
+    <section style="background: var(--bg-secondary); padding: 6rem 0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="glass-card reveal-scale">
+                <div class="section-subtitle" style="text-align: center;">Staffing Inquiries</div>
+                <h2 style="text-align: center; margin-bottom: 1.5rem; font-size: 2rem;">Submit Hiring Request</h2>
+                <p style="text-align: center; margin-bottom: 2.5rem; font-size: 0.95rem;">Provide your hiring parameters below. An advisor from Sample Consultancy will touch base to discuss candidate qualifications.</p>
+                
+                <form id="talent-request-form" onsubmit="event.preventDefault(); alert('Success! Your staffing request has been received by Sample Consultancy.'); this.reset();">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;" class="form-responsive-grid">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="comp-contact-name">Contact Person</label>
+                            <input type="text" id="comp-contact-name" required placeholder="e.g. Priyanjali Sen">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="comp-name">Company Name</label>
+                            <input type="text" id="comp-name" required placeholder="e.g. Innovate Corp">
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;" class="form-responsive-grid">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="comp-email">Work Email</label>
+                            <input type="email" id="comp-email" required placeholder="e.g. recruiting@innovate.com">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="comp-phone">Phone Number</label>
+                            <input type="tel" id="comp-phone" required placeholder="e.g. +91 91234 56789">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comp-requirements">Hiring Requirements Description</label>
+                        <textarea id="comp-requirements" rows="5" required placeholder="Outline the qualifications and roles you are looking to source..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-text">Sample Consultancy</span>
+                    </a>
+                    <p>Connecting Employers with Skilled Professionals</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Job Board</a></li>
+                        <li><a href="employers.html">Employers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li style="color: var(--text-secondary); display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i class="fas fa-envelope fa-fw" style="color: var(--accent-beige);"></i> info@sampleconsultancy.com</li>
+                        <li style="color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><i class="fas fa-clock fa-fw" style="color: var(--accent-beige);"></i> Mon - Sat: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <span id="copyright-year">2026</span> Sample Consultancy. All Rights Reserved.</p>
+                <p style="color: rgba(255, 255, 255, 0.35); font-size: 0.75rem; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">This website is made for experimental and showcase purposes, will not be used to impersonate anyone's website, and will not be used for phishing or fraudulent practices.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Form Responsive patch -->
+    <style>
+        @media (max-width: 600px) {
+            .form-responsive-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem !important;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

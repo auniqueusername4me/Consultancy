@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board | Sample Consultancy</title>
+    <meta name="description" content="Explore career openings at Sample Consultancy. Find parody job opportunities.">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Stripe-Style Animated Mesh Gradient Backdrop -->
+    <div class="stripe-mesh-gradient"></div>
+
+    <!-- 3D Background Grid -->
+    <div class="bg-3d-grid">
+        <div class="bg-3d-element"></div>
+    </div>
+
+    <!-- Header & Navigation (Apple Sub-Navigation Bar Layout) -->
+    <header class="apple-sub-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sample Consultancy</a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="employers.html">Employers</a></li>
+                <li><a href="jobs.html" class="active">Job Seekers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Portal Hero with Background Video -->
+    <section class="jobs-hero">
+        <video class="hero-video-bg" preload="metadata" loop muted playsinline poster="https://img1.wsimg.com/isteam/videos/ubwAw3P1NGSn7Qly4">
+            <source src="https://categories.api.godaddy.com/v4/videos/raw/video/ubwAw3P1NGSn7Qly4" type="video/mp4">
+        </video>
+        <div class="hero-gradient-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="section-subtitle">Career Portal</div>
+            <h1>Explore <span>Parody Career Roles</span></h1>
+            <p style="margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">Connecting employers with highly questionable professionals. Vetted through rigorous sarcasm protocols.</p>
+        </div>
+    </section>
+
+    <!-- Job Finder Portal -->
+    <section style="padding-top: 4rem; padding-bottom: 8rem;">
+        <div class="container">
+            <!-- Filter Options Panel -->
+            <div class="filter-bar reveal-scale">
+                <div class="filter-group">
+                    <label for="search-input">Search Jobs</label>
+                    <input type="text" id="search-input" placeholder="Job Title, Skills...">
+                </div>
+                <div class="filter-group">
+                    <label for="sector-select">Industry Sector</label>
+                    <select id="sector-select">
+                        <option value="all">All Sectors</option>
+                        <option value="corporate">Corporate Theater</option>
+                        <option value="dev">Software Craftsmanship</option>
+                        <option value="buzz">Buzzword Engineering</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location-select">Location</label>
+                    <select id="location-select">
+                        <option value="all">All Locations</option>
+                        <option value="zoom">Zoom Room 4B</option>
+                        <option value="watercooler">Watercooler Area</option>
+                        <option value="bed">Work From Bed</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-select">Job Type</label>
+                    <select id="type-select">
+                        <option value="all">All Types</option>
+                        <option value="endless">Endless Meeting</option>
+                        <option value="nap">Napping Allowed</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Jobs Grid -->
+            <div class="jobs-grid" id="jobs-container">
+                <!-- Dynamically populated via jobs.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Modal Overlay -->
+    <div class="modal-overlay" id="apply-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">&times;</button>
+            <h3 id="modal-job-title">Apply for Job Role</h3>
+            
+            <form id="job-application-form">
+                <input type="hidden" id="applied-job-id" name="jobId">
+                <div class="form-group">
+                    <label for="applicant-name">Full Name</label>
+                    <input type="text" id="applicant-name" required placeholder="e.g. Rahul Sharma">
+                </div>
+                <div class="form-group">
+                    <label for="applicant-email">Email Address</label>
+                    <input type="email" id="applicant-email" required placeholder="e.g. rahul@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="applicant-phone">Phone Number</label>
+                    <input type="tel" id="applicant-phone" required placeholder="e.g. +91 98765 43210">
+                </div>
+                
+                <div class="form-group">
+                    <label>Resume / CV</label>
+                    <div class="drag-drop-zone" id="resume-dropzone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop your resume file here or <strong>browse files</strong></p>
+                        <span>Supports PDF, DOC, DOCX up to 5MB</span>
+                        <input type="file" id="resume-file-input" style="display: none;" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div id="file-upload-status" style="display: none; margin-top: -10px; margin-bottom: 15px; font-size: 0.9rem; color: var(--accent-beige);">
+                        <i class="fas fa-file-alt"></i> <span id="file-name-display"></span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-text">Sample Consultancy</span>
+                    </a>
+                    <p>Connecting Employers with Skilled Professionals</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Job Seekers</a></li>
+                        <li><a href="employers.html">Employers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li style="color: var(--text-secondary); display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i class="fas fa-envelope fa-fw" style="color: var(--accent-beige);"></i> info@sampleconsultancy.com</li>
+                        <li style="color: var(--text-secondary); display: flex; align-items: center; gap: 8px;"><i class="fas fa-clock fa-fw" style="color: var(--accent-beige);"></i> Mon - Sat: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <span id="copyright-year">2026</span> Sample Consultancy. All Rights Reserved.</p>
+                <p style="color: rgba(255, 255, 255, 0.35); font-size: 0.75rem; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4;">This website is made for experimental and showcase purposes, will not be used to impersonate anyone's website, and will not be used for phishing or fraudulent practices.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="jobs.js"></script>
+</body>
+</html>
