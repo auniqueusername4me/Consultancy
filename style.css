@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap');
 
-/* CSS Variables for Theming & Branding (Original True Black & Beige Scheme) */
 :root {
-    /* Color Palette */
+    
     --bg-primary: #000000;
     --bg-secondary: #08080a;
     --card-bg: #0d0d0f;
@@ -10,22 +9,20 @@
     --border-hover: rgba(222, 223, 219, 0.35);
     
     --text-primary: #ffffff;
-    --text-secondary: #8e8e93; /* Apple/Stripe gray */
+    --text-secondary: #8e8e93; 
     --text-muted: #626266;
     
-    --accent-beige: #dedfdb; /* Accent warm beige */
+    --accent-beige: #dedfdb; 
     --accent-gradient: linear-gradient(135deg, #ffffff 0%, #dedfdb 100%);
     --bg-gradient: radial-gradient(circle at 50% 50%, #0d0d0f 0%, #000000 100%);
     
-    /* Layout & Apple Physics Styling */
     --apple-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
     --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     --apple-glass-transition: background 320ms cubic-bezier(0.25, 1, 0.5, 1), border-color 320ms cubic-bezier(0.25, 1, 0.5, 1), backdrop-filter 320ms cubic-bezier(0.25, 1, 0.5, 1), -webkit-backdrop-filter 320ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 320ms cubic-bezier(0.25, 1, 0.5, 1), transform 320ms cubic-bezier(0.25, 1, 0.5, 1);
-    --border-radius: 24px; /* Pitch-style highly rounded corners */
+    --border-radius: 24px; 
     --max-width: 1100px;
 }
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +42,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Stripe-Style Animated Mesh Gradient Backdrop */
 .stripe-mesh-gradient {
     position: fixed;
     inset: 0;
@@ -66,7 +62,6 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* 3D Scrollable Grid Background */
 .bg-3d-grid {
     position: fixed;
     top: 0;
@@ -98,7 +93,6 @@ body {
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Layout Container */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -106,7 +100,6 @@ body {
     width: 100%;
 }
 
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
@@ -138,7 +131,6 @@ p {
     font-size: 1.0625rem;
 }
 
-/* Header & Glassmorphic Apple-style Navigation */
 header {
     position: fixed;
     top: 0;
@@ -177,7 +169,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 0.5rem; /* tight gaps for pill spacing */
+    gap: 0.5rem; 
     align-items: center;
     font-family: 'Lato', sans-serif;
 }
@@ -222,7 +214,6 @@ header {
     box-shadow: 0 4px 15px rgba(222, 223, 219, 0.2);
 }
 
-/* Mobile Toggle */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -232,7 +223,6 @@ header {
     cursor: pointer;
 }
 
-/* Section Spacing (Generous Whitespace for Breathable Layout) */
 section {
     padding: 9.5rem 0;
     position: relative;
@@ -249,7 +239,6 @@ section {
     margin-bottom: 0.75rem;
 }
 
-/* Hero Sections (both Homepage & Jobs Portal) */
 .hero-section,
 .jobs-hero {
     min-height: 100vh;
@@ -323,7 +312,6 @@ section {
     justify-content: center;
 }
 
-/* Apple/Stripe Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -366,7 +354,6 @@ section {
     transform: translateY(-2px);
 }
 
-/* Glassmorphic/Apple Dark Cards */
 .glass-card {
     background: rgba(255, 255, 255, 0.015);
     border: 1px solid rgba(255, 255, 255, 0.03);
@@ -384,7 +371,6 @@ section {
     transform: translateY(-4px);
 }
 
-/* Metrics Section (Apple Stats Showcase) */
 .metrics-section {
     padding: 6rem 0;
     background: #000000;
@@ -416,7 +402,6 @@ section {
     font-family: 'Lato', sans-serif;
 }
 
-/* About Section */
 .about-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -460,12 +445,11 @@ section {
     transform: scale(1.01);
 }
 
-/* --- Pitch-Style Bento Grid (Sophisticated Showcase) --- */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 270px; /* higher row height */
-    gap: 1.75rem; /* wider bento spacing */
+    grid-auto-rows: 270px; 
+    gap: 1.75rem; 
     margin-top: 4rem;
 }
 
@@ -548,7 +532,6 @@ section {
     color: var(--text-secondary);
 }
 
-/* Subscribe Section */
 .subscribe-section {
     padding: 9.5rem 0;
 }
@@ -594,7 +577,6 @@ section {
     border-radius: 30px;
 }
 
-/* Footer styling */
 footer {
     background-color: #000000;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -651,7 +633,6 @@ footer {
     font-size: 0.85rem;
 }
 
-/* Apple-style Scale Scroll Reveal */
 .reveal-scale {
     opacity: 0;
     transform: scale(0.96) translateY(24px);
@@ -663,9 +644,6 @@ footer {
     transform: scale(1) translateY(0);
 }
 
-/* --- Pages Sub-layouts --- */
-
-/* Job Seeker Portal Filters */
 .filter-bar {
     display: flex;
     gap: 1.25rem;
@@ -789,7 +767,6 @@ footer {
     margin-top: auto;
 }
 
-/* Modal Popup Styles */
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -883,7 +860,6 @@ footer {
     border-color: var(--border-hover);
 }
 
-/* File Drag & Drop Box */
 .drag-drop-zone {
     border: 1px dashed var(--border-color);
     border-radius: var(--border-radius);
@@ -917,7 +893,6 @@ footer {
     color: var(--text-muted);
 }
 
-/* Values Grid */
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -947,7 +922,6 @@ footer {
     font-size: 1.35rem;
 }
 
-/* Contact layout */
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1003,7 +977,6 @@ footer {
     color: #ffffff;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
     .about-grid, .contact-layout {
         grid-template-columns: 1fr;
@@ -1059,7 +1032,6 @@ footer {
     }
 }
 
-/* Interactive Scroll-Scrub video styles */
 .scrub-track-container {
     position: relative;
     width: 100%;
@@ -1161,11 +1133,6 @@ footer {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   Minimalist Apple-Style White Hero Layout
-   ========================================================================== */
-
-/* Sub-Navigation Header Bar (Light Glassmorphic Theme) */
 header.apple-sub-nav {
     background: rgba(255, 255, 255, 0.45) !important;
     backdrop-filter: saturate(180%) blur(20px) !important;
@@ -1187,8 +1154,8 @@ header.apple-sub-nav .logo {
 }
 
 header.apple-sub-nav .nav-links a {
-    font-size: 0.9rem !important; /* Increased font size for legibility */
-    font-weight: 600 !important; /* Made links bolder */
+    font-size: 0.9rem !important; 
+    font-weight: 600 !important; 
     color: #515154 !important;
     padding: 0.25rem 0.75rem !important;
     border-radius: 12px !important;
@@ -1204,7 +1171,7 @@ header.apple-sub-nav .nav-links a.active {
 }
 
 header.apple-sub-nav .nav-cta {
-    background: #0071e3 !important; /* Pinned Apple Blue */
+    background: #0071e3 !important; 
     color: #ffffff !important;
     font-weight: 600 !important;
     padding: 0.3rem 0.9rem !important;
@@ -1216,7 +1183,6 @@ header.apple-sub-nav .nav-cta:hover {
     background: #0077ed !important;
 }
 
-/* Minimalist White Hero Section Layout */
 .apple-white-hero {
     background: #ffffff;
     min-height: 80vh;
@@ -1304,7 +1270,6 @@ header.apple-sub-nav .nav-cta:hover {
     transform: translateY(-1px) scale(1.03);
 }
 
-/* Load Animations Keyframes */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -1335,7 +1300,3 @@ header.apple-sub-nav .nav-cta:hover {
         transform: scale(1);
     }
 }
-
-
-
-

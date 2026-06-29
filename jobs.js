@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Satirical / Parody Jobs Database
+    
     const jobListings = [
         {
             id: 1,
@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    // 2. Rendering Logic
     const jobsContainer = document.getElementById('jobs-container');
 
     const renderJobs = (jobs) => {
@@ -124,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         bindApplyButtons();
     };
 
-    // 3. Filter Controls Handler
     const searchInput = document.getElementById('search-input');
     const sectorSelect = document.getElementById('sector-select');
     const locationSelect = document.getElementById('location-select');
@@ -156,10 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (locationSelect) locationSelect.addEventListener('change', filterJobs);
     if (typeSelect) typeSelect.addEventListener('change', filterJobs);
 
-    // Initial render
     renderJobs(jobListings);
 
-    // 4. Modal Popup Controls
     const applyModal = document.getElementById('apply-modal');
     const closeModalBtn = document.getElementById('close-modal');
     const modalJobTitle = document.getElementById('modal-job-title');
@@ -194,7 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Drag & Drop File Upload Interactions
     const dropzone = document.getElementById('resume-dropzone');
     const fileInput = document.getElementById('resume-file-input');
     const uploadStatus = document.getElementById('file-upload-status');
@@ -241,7 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
         uploadStatus.style.display = 'block';
     }
 
-    // 6. Application Form Submission Handle
     const applicationForm = document.getElementById('job-application-form');
     if (applicationForm) {
         applicationForm.addEventListener('submit', (e) => {
