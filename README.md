@@ -1,13 +1,7 @@
 <div align="center" id="top">
-  <!-- You can replace this image with a screenshot of your consultancy website in the future -->
-  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" width="900" alt="Consultancy Project Showcase" style="border-radius: 8px;" />
-
-  <a href="https://github.com/auniqueusername4me/Consultancy">Repository</a>
-</div>
-
-<div align="center">
   <h1>Consultancy Showcase Website</h1>
-  <h3>A modern and interactive frontend prototype designed for presentation.</h3>
+  <h3>A modern, interactive frontend website prototype.</h3>
+  <a href="https://github.com/auniqueusername4me/Consultancy">Repository</a>
 </div>
 
 <p align="center">
@@ -29,12 +23,26 @@
 </p>
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <a href="#wave-welcome--introduction">Introduction</a> &#xa0; | &#xa0;
+  <a href="#dart-about">About the Project</a> &#xa0; | &#xa0;
   <a href="#sparkles-key-features--animations">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#user-about-me">About Me</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a>
 </p>
+
+## :wave: Welcome & Introduction ##
+
+Hello! My name is **Ayush**. 
+
+I have recently completed my studies and am very excited to begin my journey in the tech industry. I am constantly eager to learn new technologies, improve my coding skills, and take on new challenges.
+
+I created this website prototype to demonstrate my dedication and capabilities. Consider this project a reflection of my work ethic and a promise of the effort I will bring to your team. If you find my work promising and believe I would be a good fit, please feel free to reach out to me. I would be glad to connect and discuss potential opportunities!
+
+### :mailbox_with_mail: Contact Information
+*   **Phone:** [+91 9891628931](tel:9891628931)
+*   **Email:** [pachouriayush1769@gmail.com](mailto:pachouriayush1769@gmail.com)
+
+---
 
 ## :dart: About ##
 
@@ -67,15 +75,7 @@ The project is built using standard web technologies to ensure lightweight perfo
   <img width="50" title="JavaScript" alt="JavaScript Logo" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
 </a>
 
-*(Feel free to update or add icons above if you used frameworks like React, Tailwind CSS, or library tools like Framer Motion.)*
-
-## :user: About Me ##
-
-Hi there! My name is **Ayush**. 
-
-I have recently completed my 12th-standard education and am highly focused on pursuing web development. I am passionate about learning new technologies and building functional, interactive user interfaces. 
-
-This project was built to show my commitment, design sense, and practical skills. I hope to utilize my capabilities to contribute to professional web projects and grow as a developer.
+*(Feel free to update or add icons above if you used other tools like React, Tailwind CSS, or custom libraries.)*
 
 ## :white_check_mark: Requirements ##
 
