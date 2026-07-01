@@ -91,5 +91,3 @@ $ git clone https://github.com/auniqueusername4me/Consultancy
 
 # Access the project folder
 $ cd Consultancy
-
-# Open index.html in your preferred browser, or use a local live server extension (like Live Server in VS Code)
